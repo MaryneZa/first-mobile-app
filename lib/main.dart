@@ -2,8 +2,15 @@ import 'package:flutter/material.dart';
 import 'package:first_app/screens/home.dart';
 
 void main() {
-  runApp(
-    MaterialApp(
+  runApp(MyWidget());
+}
+
+class MyWidget extends StatelessWidget {
+  const MyWidget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
       title: "My Title",
       home: Scaffold(
         appBar: AppBar(
@@ -13,7 +20,7 @@ void main() {
         ),
         body: const Home(),
       ),
-    ),
-  );
+    );
+  }
 }
 
