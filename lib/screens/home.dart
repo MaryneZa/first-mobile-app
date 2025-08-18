@@ -14,6 +14,18 @@ class Home extends StatelessWidget {
           width: 50,
           height: 50,
           // color: Colors.amber,
+        ),
+        SizedBox(height: 40,),
+        Image.asset(
+          "asset/images/pic1.png",
+          width: 150,
+          height: 150,
+        ),
+        SizedBox(height: 40,),
+        Image.asset(
+          "asset/images/pic2.png",
+          width: 150,
+          height: 150,
         )
       ],
     );
