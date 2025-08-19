@@ -1,5 +1,5 @@
+import 'package:first_app/screens/item.dart';
 import 'package:flutter/material.dart';
-import 'package:first_app/screens/home.dart';
 
 void main() {
   runApp(MyWidget());
@@ -18,7 +18,7 @@ class MyWidget extends StatelessWidget {
           backgroundColor: Colors.blue,
           centerTitle: true,
         ),
-        body: const Home(),
+        body: const Item(),
       ),
     );
   }
