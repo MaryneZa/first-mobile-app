@@ -1,5 +1,6 @@
 import 'package:first_app/models/person.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class Item extends StatefulWidget {
   const Item({super.key});
@@ -29,10 +30,17 @@ class _ItemState extends State<Item> {
                 children: [
                   Text(
                     data[index].name,
-                    style: TextStyle(
-                      color: Colors.white,
-                      fontWeight: FontWeight.bold,
-                      fontSize: 30,
+                    // style: TextStyle(
+                    //   color: Colors.white,
+                    //   fontWeight: FontWeight.bold,
+                    //   fontSize: 30,
+                    // ),
+                    style: GoogleFonts.kanit(
+                      textStyle: TextStyle(
+                        color: Colors.white,
+                        fontWeight: FontWeight.bold,
+                        fontSize: 30,
+                      ),
                     ),
                   ),
                   SizedBox(height: 5),
@@ -46,11 +54,7 @@ class _ItemState extends State<Item> {
                   ),
                 ],
               ),
-              Image.asset(
-                data[index].job.image,
-                width: 60,
-                height: 60,
-              )
+              Image.asset(data[index].job.image, width: 60, height: 60),
             ],
           ),
         );
